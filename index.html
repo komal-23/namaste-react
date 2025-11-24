@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Program</title>
+</head>
+<body>
+    <div id="root"></div>
+    <ul id="myList"></ul>
+    <script>
+        const heading = document.createElement('h1');
+        heading.innerHTML = "Hello Javascript";
+        const root = document.getElementById('root');
+        root.appendChild(heading);
+
+        console.log('CreateFragment');
+        const fragment = document.createDocumentFragment();
+
+        // Create some list items and append them to the fragment
+        const fruits = ['Apple', 'Banana', 'Orange'];
+        for (const fruit of fruits) {
+            const listItem = document.createElement('li');
+            listItem.textContent = fruit;
+            fragment.appendChild(listItem);
+        }
+
+        // Get the target unordered list from the DOM
+        const ulElement = document.getElementById('myList');
+        ulElement.appendChild(fragment);
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React CDN</title>
+</head>
+<body>
+    <!-- js file order matters -->
+    <div id="root1">
+        <h1>I am here</h1>
+        <div id="root"></div>
+    </div>
+    <script crossorigin="anonymous" src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin="anonymous" src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="./app.js">
+    </script>
+</body>
+</html>
