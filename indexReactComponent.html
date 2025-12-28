@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React CDN</title>
+</head>
+<body>
+    <!-- js file order matters -->
+    <div id="root1">
+        <div id="root"></div>
+    </div>
+    <script type="module" src="./appReactComponent.js"></script>
+    <!--when we are not using type="module" browser treats app.js is notmal js file so normal js has not import -->
+    <!-- type="module" to solve Browser scripts cannot have imports or exports. -->
+</body>
+</html>

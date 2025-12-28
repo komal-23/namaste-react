@@ -19,7 +19,7 @@
   "author": "Komal Takale",
   "type": "commonjs",
   "scripts": {
-    "start" : "parcel index.html",
+    "start" : "parcel indexReactComponent.html",
     "test": "jest"
   },
   "devDependencies": {
